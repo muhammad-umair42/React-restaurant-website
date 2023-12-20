@@ -1,0 +1,142 @@
+
+.Auth{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-base);
+    background: url('../../assets/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.auth__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid var(--color-golden);
+border-radius: 8px;
+padding: 0.5rem;
+box-sizing: border-box;
+}
+
+.auth__box-heading{
+    background: #FFD700;
+background: linear-gradient(to right, #FFD700 0%, #DAA520 30%, #F0E68C 80%, #EEE8AA 96%, #FAFAD2 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 900;
+
+font-size: 30px;
+padding: 1rem;
+}
+
+.auth__box-inputs-login{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 20px;
+}
+
+.authbox__inputs-register{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 1rem;
+}
+
+.input__item{
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+flex-direction: column;
+gap: 10px;
+}
+
+.input__item-title{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.input__item-input{
+    width: 200px;
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    outline: none;
+    border: 2px solid var(--color-golden);
+}
+
+.auth__button{
+    background: linear-gradient(to right, #FFD700 0%, #DAA520 30%, #F0E68C 80%, #EEE8AA 96%, #FAFAD2 100%);
+
+border-radius: 10px;
+border: none;
+padding: 0.5rem 2rem;
+color: black;
+margin: 1rem;
+cursor: pointer;
+font-weight: 500;
+}
+
+.login__message{
+    font-size: 15px;
+    color: red;
+    padding: 5px;
+}
+.new__account{
+    font-size: 17px;
+    color: var(--color-golden);
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.new__account:hover{
+    text-decoration: underline;
+}
+
+.green{
+    color: aquamarine;
+}
+
+@media screen and (min-width:2000px){
+    .auth__box{
+        padding: 2rem;
+    }
+    .auth__box-heading{
+            font-size: 50px;
+    }
+
+    .input__item-title{
+        font-size: 20px;
+    }
+    .input__item-input{
+        width: 300px;
+        padding:10px;
+        font-size: 15px;
+    }
+    .login__message{
+        font-size: 15px;
+    }
+
+    .new__account{
+        font-size: 15px;
+    }
+    .auth__button{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 1rem 4rem;
+    }
+}
+
+@media screen and (max-width:700px){
+    .authbox__inputs-register{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}

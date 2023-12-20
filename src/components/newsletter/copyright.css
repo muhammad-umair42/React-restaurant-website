@@ -1,0 +1,8 @@
+.copyright{
+    margin: auto;
+    font-size: 12px;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    background: var(--color-black);
+}

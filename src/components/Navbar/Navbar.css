@@ -1,0 +1,134 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--color-black);
+    color: white;
+    z-index: 100;
+}
+
+.nav__logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav__logo img{
+    width: 150px;
+}
+
+.nav__links{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav__links li{
+    margin: 0 1rem;
+}
+
+.nav__links li:hover{
+    color: var(--color-grey);
+}
+
+.nav__login{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.nav__login a{
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.nav__login a:hover{
+    border-bottom: 1px solid var(--color-golden);   
+}
+
+.nav__login div{
+    width: 1px;
+    height: 30px;
+    background: var(--color-grey);
+}
+
+.navbar__smallscreen{
+    display: none;
+}
+
+.nav__sm__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    z-index: 6;
+    transition: .5s ease;
+    background: var(--color-black);
+}
+
+.overlay__close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--color-golden);
+    cursor: pointer;
+}
+
+.nav__links__sm{
+    list-style: none;
+}
+
+.nav__links__sm li{
+    margin: 2rem;
+    cursor: pointer;
+    color: var(--color-golden);
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
+}
+
+.nav__links__sm li:hover{
+color: white;
+border-bottom: 1px solid var(--color-golden);
+}
+
+@media screen and (min-width:2000px){
+    .nav__logo img{
+        width: 220px;
+    }
+}
+
+@media screen and (max-width:1150px){
+    .nav__links{
+        display: none;
+    }
+
+    .navbar__smallscreen{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:650px){
+    .navbar{
+        padding: 1rem;
+    }
+    .nav__login {
+        display: none;
+    }
+
+    .nav__logo img {
+        width: 110px;
+    }
+}

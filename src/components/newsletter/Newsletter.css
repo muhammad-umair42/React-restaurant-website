@@ -1,0 +1,32 @@
+.newsletter{
+    background: var(--color-black);
+    padding: 4rem 6rem;
+    max-width: 70vw;
+}
+.newsletter__input{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+}
+
+.newsletter__input input{
+flex:1;
+color: white;
+padding: 0.8rem;
+background-color:inherit ;
+list-style: none;
+border: 1px solid #DCCA87;
+margin: 1rem;
+outline: none;
+
+}
+
+@media screen and (max-width:490px){
+    .newsletter{
+        padding: 1rem;
+    }
+    .newsletter__input{
+        flex-direction: column;
+    }
+}

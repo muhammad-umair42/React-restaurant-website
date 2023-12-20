@@ -1,0 +1,42 @@
+
+.chef__quote{
+    display: flex;
+    flex-direction:column;
+    margin: 5rem 0rem;width: 100%;
+}
+
+.chef__quote_img{
+    display: flex;
+    flex-direction: flex-start;
+    align-items: flex-end;
+}
+
+.chef__quote_img img{
+    width:47px;
+    margin: 0 1rem 1rem 0;
+}
+
+
+.chef__signature-name{
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+
+.chef__signature-img img{
+    width: 235px;
+    margin-top: 4rem;
+}
+
+@media screen and (min-width: 2000px) {
+    .chef__signature-img img {
+        width: 370px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .chef__signature-img img {
+        width: 80%;
+    }
+}

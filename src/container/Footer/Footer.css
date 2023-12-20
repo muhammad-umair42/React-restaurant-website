@@ -1,0 +1,51 @@
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.footer__contactus{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.fontsm{
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 12px;
+}
+
+.footer__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer__main img{
+width: 50px;
+}
+
+.footer__working{
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media screen and (max-width:700px){
+    .Footer{
+        flex-direction: column;
+    }
+}
